@@ -7,30 +7,30 @@ body {
   height: 100vh;
   // background: url("assets/mountains.jpeg");
   background: url("https://tsflights-images.firebaseapp.com/mountains.jpeg");
-
   background-repeat: no-repeat;
+  background-color: aliceblue;
   background-size: cover;
 }
 
 header {
   width: 100vw;
   height: 100px;
-  background-color: white;
+  background-color: aliceblue;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   .logo_box {
-    background-image: url("https://tsflights-images.firebaseapp.com/TsFlightsHorizLogo.jpg");
-    // background-image: url("assets/TsFlightsHorizLogo.jpg");
-
+    // background-image: url("https://tsflights-images.firebaseapp.com/TsFlightsHorizLogo.jpg");
+    background-image: url("assets/TsFlightsHorizLogo-removebg-preview.png");
     height: 80px;
     width: 250px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: center;
-    margin: 10px 20px;
     align-self: flex-start;
+    margin: 20px 20px;
+
     @media screen and (max-width: 497px) {
       width: 200px;
       margin-left: 4px;
@@ -46,6 +46,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
     button {
       border-radius: 9px;
       width: 100px;
@@ -53,9 +54,13 @@ header {
       background-color: #415d65;
       color: white;
       text-align: center;
+      margin-right: 5px;
+      margin-left: 4px;
+
       @media screen and (max-width: 480px) {
         width: 60px;
         margin-right: 5px;
+        margin-left: 4px;
       }
     }
   }
